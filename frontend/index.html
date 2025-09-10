@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodBridge - Connecting Surplus to Need</title>
+    <meta name="description" content="A platform connecting food donors with recipients to reduce waste and fight hunger through smart food redistribution." />
+  </head>
+  <body>
+    <div id="root">Loading…</div>
+    <script>
+      (function(){
+        function show(msg){
+          var el = document.createElement('pre');
+          el.style.whiteSpace='pre-wrap';
+          el.style.color='#b91c1c';
+          el.style.background='#fef2f2';
+          el.style.padding='12px';
+          el.style.border='1px solid #fecaca';
+          el.style.borderRadius='6px';
+          el.textContent = msg;
+          document.body.appendChild(el);
+        }
+        window.addEventListener('error', function(e){ show('Runtime error: '+ e.error); });
+        window.addEventListener('unhandledrejection', function(e){ show('Unhandled promise: '+ e.reason); });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
