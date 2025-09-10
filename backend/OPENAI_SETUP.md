@@ -16,7 +16,7 @@
 3. **Add Configuration to `.env`:**
    ```env
    # OpenAI Configuration
-   OPENAI_API_KEY=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
+   OPENAI_API_KEY=your-openai-api-key-here
    OPENAI_MODEL=gpt-4o-mini
    OPENAI_ENABLED=true
    
